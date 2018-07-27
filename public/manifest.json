@@ -1,6 +1,6 @@
 {
-  "name": "blahblah",
-  "short_name": "blahblah",
+  "name": "VoiceMail",
+  "short_name": "VoiceMail",
   "icons": [
     {
       "src": "/img/icons/android-chrome-192x192.png",

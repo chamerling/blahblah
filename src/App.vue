@@ -2,7 +2,7 @@
   <v-app id="app">
     <v-toolbar fixed app>
       <v-toolbar-side-icon></v-toolbar-side-icon>
-      <v-toolbar-title>BlahBlah</v-toolbar-title>
+      <v-toolbar-title>VoiceMail</v-toolbar-title>
     </v-toolbar>
     <main>
       <v-content>
