@@ -13,7 +13,7 @@ export function record() {
     const stop = () =>
       new Promise(resolve => {
         mediaRecorder.addEventListener("stop", () => {
-          const audioBlob = new Blob(audioChunks);
+          const audioBlob = new Blob(audioChunks, { type: "audio/webm" });
           const audioUrl = URL.createObjectURL(audioBlob);
           const audio = new Audio(audioUrl);
           const play = () => audio.play();

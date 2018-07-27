@@ -37,7 +37,7 @@ export default {
         const recorder = await record();
         recorder.start();
         this.isRecording = true;
-        await sleep(5000);
+        await sleep(3000);
         const audioTrack = await recorder.stop();
         this.isRecording = false;
 

@@ -1,9 +1,7 @@
 <template>
   <v-fade-transition>
     <v-card class="ma-3">
-      <audio controls="controls" :src="track.audioUrl">
-        Votre navigateur ne supporte pas l'élément <code>audio</code>.
-      </audio>
+      <vuetify-audio :file="track.audioUrl"></vuetify-audio>
       <v-card-actions>
         <v-btn flat>Share</v-btn>
         <v-spacer></v-spacer>
@@ -16,7 +14,9 @@
 </template>
 
 <script>
+import VuetifyAudio from 'vuetify-audio';
 export default {
+
   name: "SoundCard",
   props: ["track"],
   methods: {
@@ -26,6 +26,9 @@ export default {
     remove: function() {
       this.$store.dispatch("removeTrack", this.track);
     }
+  },
+  components: {
+    'vuetify-audio': VuetifyAudio
   }
 };
 </script>

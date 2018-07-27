@@ -15,7 +15,7 @@
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
     "vuetify": "^1.1.8",
-    "vuetify-audio": "0.0.8",
+    "vuetify-audio": "chamerling/vuetify-audio#infinite-duration",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
