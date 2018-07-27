@@ -1,7 +1,7 @@
 <template>
   <v-fade-transition>
     <v-card class="ma-3">
-      <vuetify-audio :file="track.audioUrl"></vuetify-audio>
+      <vuetify-audio :file="track.audioUrl" control-color="blue"></vuetify-audio>
       <v-card-actions>
         <v-btn flat>Share</v-btn>
         <v-spacer></v-spacer>
